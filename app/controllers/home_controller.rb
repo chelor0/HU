@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
   end
-  
+    @questions = Question.all
   def about
   end
   

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :questions
   #routes the root page to the home index page
   root 'home#index'
   
