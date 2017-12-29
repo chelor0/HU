@@ -6,15 +6,15 @@
 
 <p>Find me in app/views/home/index.html.erb</p>
 
-<% @questions.each do |q| %>
+<%# @questions.each do |q| %>
 <p2><div class="media">
-  <img class="mr-3" src="<%= q.gravatar %>" alt="Generic placeholder image">
+  <img class="mr-3" src="<%#= q.gravatar %>" alt="Generic placeholder image">
   <div class="media-body">
-    <h5 class="mt-0"><%= q.email %> asked:</h5>
-	<div><%= time_ago_in_words q.created_at %></div>
-    <%= q.body %>
+    <h5 class="mt-0"><%#= q.email %> asked:</h5>
+	<div><%#= time_ago_in_words q.created_at %></div>
+    <%#= q.body %>
 	<div>
-		<a href="/questions/12" class="btn btn-success btn-xs">View Answers</a>
+		<a href="<%#= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a>
 	</div>
   </div>
   </div>
@@ -43,4 +43,4 @@
   </div>
   </div>
 </p2>
-<% end %>
+<%# end %>
