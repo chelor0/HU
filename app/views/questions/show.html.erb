@@ -18,4 +18,26 @@
 	
 	<%= render 'home/new_answer_form' %>
 	
+	
+	<%#= @answers.each do |answer| %>
+	<div class="lead well">
+		
+		<p2><div class="media">		  			 
+		  <img class="mr-3" src="<%#= @question.gravatar %>" alt="Generic placeholder image">
+		  <div class="media-body">		    
+		    <h5 class="mt-0"><%#= @question.email %> asked:</h5>
+			<div><%#= time_ago_in_words answer.created_at %></div>
+		    <%#= @question.body %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		  </div>
+		  </div>
+		</p2>
+		<%# end %>
+		<div>
+			<button type= "button" class="btn btn-success btn-sm" 		data-toggle="modal" data-target="#new-answer-modal">Submit new answer</a>
+		</div>
+	
+		<%= render 'home/new_answer_form' %>
+		
+	</div>
+	
 </div>
