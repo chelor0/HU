@@ -13,9 +13,7 @@
   </head>
 
   <body>
-	<%= render 'home/navbar' %>    
-		
-	<div class+"well"><%= session[:current_user_email] || 'No email is saved' %></div>	
+	<%= render 'home/navbar' %>    	
 		
     <%= yield %>
 	
